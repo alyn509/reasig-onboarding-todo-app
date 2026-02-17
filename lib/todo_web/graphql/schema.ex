@@ -14,7 +14,6 @@ defmodule TodoWeb.GraphQL.Schema do
   mutation do
     field :create_todo, :todo do
       arg(:description, non_null(:string))
-      arg(:parent_id, :id)
 
       resolve(&TodoResolver.create_todo/3)
     end

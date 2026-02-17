@@ -6,11 +6,7 @@ defmodule Todo.Repo.Migrations.CreateTodo do
       add :description, :string
       add :completed, :boolean, default: false
 
-      add :parent_id, references(:todos, on_delete: :nilify_all)
-
       timestamps()
     end
-
-    create index(:todos, [:parent_id])
   end
 end

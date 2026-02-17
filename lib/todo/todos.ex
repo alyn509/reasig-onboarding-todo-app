@@ -1,5 +1,4 @@
 defmodule Todo.Todos do
-  import Ecto.Query
   alias Todo.Repo
   alias Todo.Todos.Todo
 
@@ -11,9 +10,5 @@ defmodule Todo.Todos do
     %Todo{}
     |> Todo.changeset(attrs)
     |> Repo.insert()
-  end
-
-  def list_children(parent_id) do
-    Repo.all(from t in Todo, where: t.parent_id == ^parent_id)
   end
 end

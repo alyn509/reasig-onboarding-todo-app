@@ -68,7 +68,8 @@ defmodule Todo.MixProject do
       {:bandit, "~> 1.5"},
       {:absinthe, "~> 1.9.0"},
       {:absinthe_plug, "~> 1.5"},
-      {:commanded, "~> 1.4.9"},
+      {:commanded, "~> 1.4"},
+      {:commanded_eventstore_adapter, "~> 1.4"},
       {:eventstore, "~> 1.4"},
       {:elixir_uuid, "~> 1.2"},
       {:dotenvy, "~> 1.0.0"}
