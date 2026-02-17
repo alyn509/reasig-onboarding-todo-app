@@ -70,6 +70,7 @@ defmodule Todo.MixProject do
       {:absinthe_plug, "~> 1.5"},
       {:commanded, "~> 1.4"},
       {:commanded_eventstore_adapter, "~> 1.4"},
+      {:commanded_ecto_projections, "~> 1.3"},
       {:eventstore, "~> 1.4"},
       {:elixir_uuid, "~> 1.2"},
       {:dotenvy, "~> 1.0.0"}

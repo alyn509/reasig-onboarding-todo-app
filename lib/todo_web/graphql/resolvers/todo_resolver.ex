@@ -9,7 +9,7 @@ defmodule TodoWeb.GraphQL.Resolvers.TodoResolver do
   def create_todo(_parent, %{description: description}, _resolution) do
     todo_id = UUID.uuid4()
 
-    cmd = %Todo.Commands.CreateTodo{
+    cmd = %CreateTodo{
       todo_id: todo_id,
       description: description,
       completed: false

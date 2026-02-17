@@ -1,14 +1,14 @@
 defmodule Todo.Todos do
   alias Todo.Repo
-  alias Todo.Todos.Todo
+  alias Todo.Todos.TodoSchema
 
   def list_todos do
-    Repo.all(Todo)
+    Repo.all(TodoSchema)
   end
 
   def create_todo(attrs) do
-    %Todo{}
-    |> Todo.changeset(attrs)
+    %TodoSchema{}
+    |> TodoSchema.changeset(attrs)
     |> Repo.insert()
   end
 end
