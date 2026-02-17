@@ -3,8 +3,8 @@ defmodule Todo.Repo.Migrations.CreateTodo do
 
   def change do
     create table(:todos) do
-      add :descriotion, :string
-      add :completed, :boolean
+      add :description, :string
+      add :completed, :boolean, default: false
 
       add :parent_id, references(:todos, on_delete: :nilify_all)
 

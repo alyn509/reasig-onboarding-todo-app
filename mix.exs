@@ -63,11 +63,14 @@ defmodule Todo.MixProject do
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 1.0"},
-      {:jason, "~> 1.2"},
+      {:jason, "~> 1.3"},
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
       {:absinthe, "~> 1.9.0"},
+      {:absinthe_plug, "~> 1.5"},
       {:commanded, "~> 1.4.9"},
+      {:eventstore, "~> 1.4"},
+      {:elixir_uuid, "~> 1.2"},
       {:dotenvy, "~> 1.0.0"}
     ]
   end

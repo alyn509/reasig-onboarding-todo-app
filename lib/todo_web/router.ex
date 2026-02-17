@@ -41,4 +41,12 @@ defmodule TodoWeb.Router do
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   end
+
+  scope "/api" do
+    pipe_through :api
+
+    forward "/graphql",
+            Absinthe.Plug,
+            schema: TodoWeb.GraphQL.Schema
+  end
 end
