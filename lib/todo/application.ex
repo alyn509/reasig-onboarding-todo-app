@@ -16,7 +16,7 @@ defmodule Todo.Application do
       # {Todo.Worker, arg},
       # Start to serve requests, typically the last entry
       {Todo.CommandedApp, []},
-      {Todo.EventHandlers.TodoHandler, []},
+      Todo.Projector.TodoProjector,
       TodoWeb.Endpoint
     ]
 
